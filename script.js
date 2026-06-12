@@ -62,3 +62,7 @@ slider.addEventListener("input", () => {
     strengthValue.textContent =
     slider.value;
 });
+const prompt =
+document.getElementById("prompt").value;
+
+console.log(prompt);
