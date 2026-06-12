@@ -40,4 +40,14 @@ document.getElementById("generateBtn").addEventListener("click", () => {
     }, 200);
 
 });
+const slider =
+document.getElementById("motionStrength");
+
+const strengthValue =
+document.getElementById("strengthValue");
+
+slider.addEventListener("input", () => {
+    strengthValue.textContent =
+    slider.value;
+});
 </script>
