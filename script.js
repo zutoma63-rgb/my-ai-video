@@ -14,6 +14,7 @@ imageInput.addEventListener("change", (event) => {
     }
 });
 
+
 document.getElementById("generateBtn").addEventListener("click", () => {
     alert("動画生成開始！");
 });
