@@ -42,7 +42,11 @@ document.getElementById("generateBtn").addEventListener("click", () => {
 
     video.src =
         "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4";
+const downloadBtn =
+    document.getElementById("downloadBtn");
 
+downloadBtn.href = video.src;
+downloadBtn.style.display = "inline-block";
 }
 
     }, 200);
