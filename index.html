@@ -25,16 +25,16 @@ button{
 
 <h1>🎬 My AI Video Studio</h1>
 
-<p>画像から動画を作ろう！</p>
-
-<input type="file">
+<input type="file" id="imageInput" accept="image/*">
 
 <br><br>
 
-<button>動画生成</button>
-<input type="file" id="imageInput">
+<img id="preview" width="300">
+
+<br><br>
+
 <button id="generateBtn">動画生成</button>
 
-<img id="preview" width="300">
+<script src="script.js"></script>
 </body>
 </html>
