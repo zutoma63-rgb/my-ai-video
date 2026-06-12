@@ -65,32 +65,37 @@ button:hover{
 </head>
 
 <body>
+<div class="container">
 
 <h1>🎬 My AI Video Studio</h1>
 
-<input type="file" id="imageInput" accept="image/*">
+<p class="subtitle">
+画像からAI動画を生成
+</p>
+
+<input
+    type="file"
+    id="imageInput"
+    accept="image/*">
+
+<br>
+
+<img id="preview">
 
 <br><br>
 
-<img id="preview" width="300">
-
-<br><br>
-
-<button id="generateBtn">動画生成</button>
+<button id="generateBtn">
+動画生成
+</button>
 
 <p id="status"></p>
 
 <progress
     id="progressBar"
     value="0"
-    max="100"
-    style="width:300px;">
+    max="100">
 </progress>
-<script src="script.js"></script>
-<video
-    id="videoPreview"
-    controls
-    width="300">
-</video>
+
+</div>
 </body>
 </html>
