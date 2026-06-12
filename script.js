@@ -3,10 +3,6 @@
 </button>
 
 <script>
-function generateVideo() {
-  alert("動画生成開始！");
-}
-alert("script.js 読み込み成功！");
 const imageInput = document.getElementById("imageInput");
 const preview = document.getElementById("preview");
 
