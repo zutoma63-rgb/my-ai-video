@@ -12,13 +12,32 @@ imageInput.addEventListener("change", (event) => {
 
 document.getElementById("generateBtn").addEventListener("click", () => {
 
-  const status = document.createElement("p");
-  status.innerText = "生成中...";
-  document.body.appendChild(status);
+    const status = document.getElementById("status");
+    const progressBar = document.getElementById("progressBar");
 
-  setTimeout(() => {
-    status.innerText = "生成完了！";
-  }, 3000);
+    let progress = 0;
+
+    status.textContent = "🎥 動画生成中...";
+    progressBar.value = 0;
+
+    const interval = setInterval(() => {
+
+        progress += 5;
+
+        progressBar.value = progress;
+        status.textContent =
+            `🎥 動画生成中... ${progress}%`;
+
+        if (progress >= 100) {
+
+            clearInterval(interval);
+
+            status.textContent =
+                "✅ 動画生成完了！";
+
+        }
+
+    }, 200);
 
 });
 </script>
