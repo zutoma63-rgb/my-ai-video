@@ -1,7 +1,3 @@
-<button onclick="generateVideo()">
-動画生成
-</button>
-
 <script>
 const imageInput = document.getElementById("imageInput");
 const preview = document.getElementById("preview");
