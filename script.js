@@ -1,3 +1,4 @@
+console.log("script.js loaded!");
 const imageInput = document.getElementById("imageInput");
 const preview = document.getElementById("preview");
 
