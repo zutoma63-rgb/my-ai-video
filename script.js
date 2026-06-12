@@ -1,4 +1,3 @@
-<script>
 const imageInput = document.getElementById("imageInput");
 const preview = document.getElementById("preview");
 
@@ -58,4 +57,3 @@ slider.addEventListener("input", () => {
     strengthValue.textContent =
     slider.value;
 });
-</script>
