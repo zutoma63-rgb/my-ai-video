@@ -12,6 +12,12 @@ imageInput.addEventListener("change", (event) => {
 
 
 document.getElementById("generateBtn").addEventListener("click", () => {
-    alert("動画生成開始！");
+  const status = document.getElementById("status");
+
+  status.textContent = "🎥 動画生成中...";
+
+  setTimeout(() => {
+    status.textContent = "✅ 動画生成完了！";
+  }, 3000);
 });
 </script>
