@@ -28,14 +28,22 @@ document.getElementById("generateBtn").addEventListener("click", () => {
         status.textContent =
             `🎥 動画生成中... ${progress}%`;
 
-        if (progress >= 100) {
+       if (progress >= 100) {
 
-            clearInterval(interval);
+    clearInterval(interval);
 
-            status.textContent =
-                "✅ 動画生成完了！";
+    status.textContent =
+        "✅ 動画生成完了！";
 
-        }
+    const video =
+        document.getElementById("videoPreview");
+
+    video.style.display = "block";
+
+    video.src =
+        "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4";
+
+}
 
     }, 200);
 
